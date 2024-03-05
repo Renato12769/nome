@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;700&display=swap');
+body {
+    background-color: var(--cor-de-fundo);
+    color: var(--branco);
+    font-family: 'Chakra Petch', sans-serif;
+}
+<body>
+    <h2>Olá devs!</h2>
+    <div>
+        <p>Aula 01</p>
+        <a href="#"><p>Slides da Aula</p></a>
+    </div>
+</body>
+<div class="container">
+<div class="item"></div>
+<div class="item"></div>
+<div class="item"></div>
+</div>
+<h2 class="titulo-principal">Escola de Tecnologia<span>_</span></h2>
+<div class="botoes">
+    <button class="botao">Nossos cursos</button>
+    <button class="botao">Quem somos?</button>
+</div>
+<script src="main.js"></script>
+const botoes = document.querySelectorAll(".botao");
+console.log(botoes)
+botoes[i].onclick = function(){
+    
+    botoes[i].classList.add(“ativo”);
+}
+const botoes = document.querySelectorAll(".botao");
+
+for(let i=0;i <botoes.length;i++){
+    botoes[i].onclick = function(){
+
+        for(let j=0;j<botoes.length;j++){
+            botoes[j].classList.remove("ativo");
+        }
+
+        botoes[i].classList.add("ativo");
+    }
+}
